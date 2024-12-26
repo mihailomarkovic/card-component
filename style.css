@@ -1,3 +1,10 @@
+/* 
+- Font size system:
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system:
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96  / 128
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +17,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: 400;
 }
 
@@ -31,4 +38,40 @@ body {
 
 .flexbox {
   display: flex;
+}
+
+.heading {
+  font-size: 3.6rem;
+}
+
+.text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding-right: 3.2rem;
+}
+
+.text-container {
+  gap: 2.4rem;
+}
+
+.content-container {
+  padding: 8rem 6.4rem;
+  justify-content: space-between;
+}
+
+.flexbox-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements-container {
+  gap: 6.4rem;
+}
+
+.achievement-numb {
+  font-size: 2.4rem;
+}
+.achievement-info {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
