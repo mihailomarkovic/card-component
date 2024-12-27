@@ -42,6 +42,17 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.highlight,
+a:link,
+a:visited {
+  color: hsl(277, 64%, 61%);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
 /* CARD RIGHT SIDE */
 
 .card {
@@ -64,10 +75,6 @@ body {
 .heading {
   font-size: 3.6rem;
   color: #fff;
-}
-
-.insights {
-  color: hsl(277, 64%, 61%);
 }
 
 .text {
@@ -122,9 +129,4 @@ body {
   transform: translateX(-50%);
   position: absolute;
   color: #fff;
-}
-
-.footer a:link,
-.footer a:visited {
-  color: hsl(228, 45%, 44%);
 }
