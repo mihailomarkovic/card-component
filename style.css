@@ -5,6 +5,8 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96  / 128
 */
 
+/* GENERAL CSS */
+
 * {
   padding: 0;
   margin: 0;
@@ -19,26 +21,20 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.2;
   font-weight: 400;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-.container {
-  max-width: 108rem;
-  margin: 12.8rem auto;
-  border-radius: 11px;
-  background-color: hsl(244, 38%, 16%);
-  overflow: hidden;
+  background-color: hsl(233, 49%, 7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .flexbox {
   display: flex;
+}
+
+.flexbox-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .grid {
@@ -46,9 +42,25 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* CARD RIGHT SIDE */
+
+.card {
+  max-width: 108rem;
+  border-radius: 11px;
+  background-color: hsl(244, 38%, 16%);
+  position: relative;
+  margin: 6.4rem 3.2rem;
+}
+
+.content-container {
+  padding: 8rem 6.4rem;
+  gap: 8rem;
+}
+
 .text-container {
   gap: 2.4rem;
 }
+
 .heading {
   font-size: 3.6rem;
   color: #fff;
@@ -61,22 +73,14 @@ body {
 .text {
   font-size: 1.4rem;
   line-height: 1.5;
-  padding-right: 4.8rem;
-  color: #adb5bd;
-}
-
-.content-container {
-  padding: 8rem 6.4rem;
-  gap: 8rem;
-}
-
-.flexbox-col {
-  display: flex;
-  flex-direction: column;
+  padding-right: 8rem;
+  color: rgba(173, 181, 189, 0.8);
+  font-weight: 300;
 }
 
 .achievements-container {
-  gap: 6.4rem;
+  justify-content: space-between;
+  padding-right: 8rem;
 }
 
 .achievement {
@@ -87,14 +91,40 @@ body {
   font-size: 2.4rem;
   color: #fff;
 }
+
 .achievement-info {
   font-size: 1.2rem;
-  color: #adb5bd;
+  color: rgba(173, 181, 189, 0.8);
   text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
+/* CARD LEFT SIDE */
+
 .img-box {
-  background-image: url("/images/image-header-desktop.jpg");
+  background: linear-gradient(rgba(170, 92, 219, 0.6), rgba(170, 92, 219, 0.6)),
+    url("/images/image-header-desktop.jpg");
+
+  filter: contrast(200%) grayscale(20%) brightness(0.6);
   background-size: cover;
   background-position: center;
+  border-radius: 0 11px 11px 0;
+}
+
+/* FOOTER */
+
+.footer {
+  font-size: 11px;
+  bottom: -12.8rem;
+  padding-bottom: 2.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  color: #fff;
+}
+
+.footer a:link,
+.footer a:visited {
+  color: hsl(228, 45%, 44%);
 }
