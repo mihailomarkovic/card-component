@@ -74,14 +74,14 @@ a:visited {
 
 .heading {
   font-size: 3.6rem;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 .text {
   font-size: 1.4rem;
   line-height: 1.5;
   padding-right: 8rem;
-  color: rgba(173, 181, 189, 0.8);
+  color: hsla(0, 0%, 100%, 0.75);
   font-weight: 300;
 }
 
@@ -96,12 +96,12 @@ a:visited {
 
 .achievement-numb {
   font-size: 2.4rem;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 .achievement-info {
   font-size: 1.2rem;
-  color: rgba(173, 181, 189, 0.8);
+  color: hsla(0, 0%, 100%, 0.6);
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
