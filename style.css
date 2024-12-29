@@ -143,9 +143,26 @@ a:visited {
   .heading {
     font-size: 3rem;
   }
+
+  .content-container {
+    padding: 6.4rem 4.8rem;
+  }
+
+  .text,
+  .achievements-container {
+    padding-right: 4.8rem;
+  }
+
+  .achievement-info {
+    letter-spacing: 0;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 62.5%;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -158,10 +175,32 @@ a:visited {
 
   .card {
     margin: 0;
+    text-align: center;
+  }
+
+  .text,
+  .achievements-container {
+    padding-right: 0;
   }
 
   body {
     padding: 6.4rem;
     min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  html {
+    font-size: 50%;
+  }
+
+  .content-container {
+    padding: 4.8rem;
+    gap: 4.8rem;
+  }
+
+  .achievements-container {
+    flex-direction: column;
+    gap: 2.4rem;
   }
 }
