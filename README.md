@@ -1,4 +1,8 @@
-# Card Component
+# [Card Component](https://mihailomarkovic.github.io/card-component/)
+
+![Picture of Card component website on a laptop and phone.](images/readme-img.png)
+
+## Introduction
 
 This repository contains my solution to the Stats Preview Card Component challenge from [Frontend Mentor](https://www.frontendmentor.io). The challenge was to create a responsive card component with a clean and visually appealing design that adapts seamlessly to different screen sizes.
 
