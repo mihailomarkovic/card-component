@@ -10,11 +10,6 @@ This repository contains my solution to the Stats Preview Card Component challen
 
 The purpose of this project was to practice building responsive layouts using **HTML** and **CSS** while maintaining a focus on semantic markup and design best practices. The card highlights key stats with bold, attention-grabbing visuals and an emphasis on accessibility.
 
-## Links
-
-- **Live Demo:** [Live Site](https://mihailomarkovic.github.io/card-component/)
-- **Solution Repository:** [GitHub Repo](https://github.com/mihailomarkovic/card-component)
-
 ## Features
 
 - Responsive design optimized for both mobile and desktop views.
